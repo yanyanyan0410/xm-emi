@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import router from './router'
+import store from './store/index'
 import App from './App.vue'
 import BaseButton from "@/components/ui/BaseButton";
 import BaseCard from "@/components/ui/BaseCard"
@@ -8,6 +9,7 @@ import BaseCard from "@/components/ui/BaseCard"
 const app = createApp(App)
 
 app.use(router)
+app.use(store)
 //app.use(ElementUI)
 
 app.component('base-button',BaseButton)

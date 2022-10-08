@@ -88,6 +88,8 @@ export default {
 
       this.$emit('search-molecule',searchList)
 
+      console.log(searchList)
+
     }
 
   }

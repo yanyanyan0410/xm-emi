@@ -14,7 +14,8 @@ import BaseCard from "@/components/ui/BaseCard";
 export default {
   components: {BaseCard, SearchList},
   methods:{
-    searchMolecule(){
+    searchMolecule(data){
+      this.$store.dispatch('sendRequest',data)  //action name
       this.$router.replace('/search')
     }
   }
